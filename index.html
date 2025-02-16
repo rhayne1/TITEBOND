@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha o Tipo de Projeto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="https://titebond.com.br/dist/25c083dbb32cd1e10d1befcc361b0377.png" alt="Logomarca Titebond" class="logo">
+    </header>
+
+    <div class="container">
+        <h2>Selecione o tipo de projeto</h2>
+        <select id="projeto" onchange="recomendarCola()">
+            <option value="">-- Escolha --</option>
+            <option value="moveis-internos">Móveis Internos</option>
+            <option value="projetos-internos">Projetos Internos</option>
+            <option value="instrumentos-musicais">Instrumentos Musicais</option>
+            <option value="umidade">Projetos com Umidade</option>
+            <option value="alimentos">Contato Indireto com Alimentos</option>
+            <option value="a-prova-dagua">À Prova D’Água</option>
+            <option value="tabuas-corte">Tábuas de Corte</option>
+            <option value="projetos-externos">Projetos Externos</option>
+            <option value="artesanato">Artesanato</option>
+            <option value="adesivo-montagem">Adesivo de Montagem</option>
+        </select>
+        <p id="resultado"></p>
+
+        <div class="imagem-cola">
+            <img id="colaImagem" src="" alt="Imagem da Cola" style="display: none;">
+        </div>
+
+        <button id="resetButton" onclick="resetarPagina()">Voltar ao Início</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

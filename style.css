@@ -1,0 +1,173 @@
+/* Estilo Geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFD207; /* Amarelo vibrante */
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: black;
+    padding: 20px;
+    border-radius: 15px; /* Borda arredondada no cabeçalho */
+    max-width: 90%;
+    margin: 0 auto 30px auto; /* Centralizar o cabeçalho */
+}
+
+/* Logomarca com bordas arredondadas */
+.logo {
+    width: 200px; /* Ajuste conforme necessário */
+    border-radius: 15px; /* Bordas arredondadas para a logo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave na logo */
+}
+
+/* Caixa Principal */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px; /* Borda arredondada no container */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 60%;
+    max-width: 450px;
+    margin-top: 20px;
+}
+
+/* Título */
+h2 {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Texto */
+p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: black;
+}
+
+/* Dropdown */
+select {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 15px; /* Espaço inferior */
+    transition: all 0.3s ease; /* Transição suave */
+}
+
+select:focus {
+    border-color: #FFD207; /* Altere a borda ao focar */
+    outline: none; /* Remove o contorno */
+}
+
+/* Centralizando a Imagem da Cola */
+.imagem-cola {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Alinha a imagem no centro verticalmente */
+    opacity: 0; /* Inicia com a imagem invisível */
+    transform: translateY(20px); /* Inicia com a imagem abaixo */
+    animation: slideIn 0.5s forwards; /* Animação de slide-up */
+}
+
+/* Animação de Fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animação de Slide-up */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Começa abaixo */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Finaliza no lugar */
+    }
+}
+
+.imagem-cola img {
+    width: 180px; /* Ajuste o tamanho da imagem */
+    border-radius: 15px; /* Bordas arredondadas nas imagens */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease; /* Transição suave */
+}
+
+/* Efeito hover nas imagens */
+.imagem-cola img:hover {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+}
+
+/* Estilo do Botão Voltar */
+#resetButton {
+    background-color: #333; /* Cor de fundo escura */
+    color: white; /* Cor do texto */
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#resetButton:hover {
+    background-color: #FFD207; /* Cor de fundo ao passar o mouse */
+    color: black; /* Cor do texto ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    background-color: #333; /* Cor de fundo escura */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #FFD207; /* Cor amarela para o e-mail */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    select {
+        font-size: 14px;
+    }
+
+    .imagem-cola img {
+        width: 150px;
+    }
+}
