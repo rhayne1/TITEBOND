@@ -135,7 +135,7 @@ select:focus {
 
 /* Rodapé */
 footer {
-    background-color: #333; /* Cor de fundo escura */
+    background-color: #; /* Cor de fundo escura */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -144,7 +144,7 @@ footer {
 }
 
 footer a {
-    color: #FFD207; /* Cor amarela para o e-mail */
+    color: #031cfc; /* Cor amarela para o e-mail */
     text-decoration: none;
 }
 
